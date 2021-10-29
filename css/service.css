@@ -1,0 +1,286 @@
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+  
+  }
+  img {
+    width: 100%;
+
+  }
+  
+  
+  .top-mv-main{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+  
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #fff;
+    position: sticky;
+    left: 0;
+    top: 0;
+  }
+  
+  .header-ttl {
+    font-size: 24px;
+    width: 80px;
+  }
+  
+  .header-nav-list {
+    display: flex;
+    font-weight: bold;
+  }
+  
+  .header-nav-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .drawer-nav {
+    display: none;
+  }
+  
+  
+  
+  
+  .footer {
+    padding: 20px 0;
+    color: white;
+    background-color: black;
+  }
+  
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-nav-item:after {
+    content: "|";
+    display: inline-block;
+    padding: 0 10px;
+  }
+  
+  .footer-nav-item:last-child:after {
+    display: none;
+  }
+  
+  
+  
+  .top-mv{
+      background-color: blue;
+      width: 100%;
+      height: 400px;
+  }
+
+
+.service-item{
+	padding: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border-top: 1px solid black;
+    width: 80%;
+    margin-left: 5%;
+}
+
+
+.service-item-ttl{
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 5%;
+
+}
+.service-item-ttl p{
+    font-size:15px;
+    font-weight: normal;
+}
+
+  .mv-main{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+  
+  }
+  
+  .mv-sub{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
+  .bottom-contact {
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
+    background-color:#E6E6E6 ;
+    padding: 10%;
+  }
+  
+  .bottom-contact-txt {
+    margin-top: 10px;
+  }
+  
+  .bottom-contact-btn {
+    margin: 40px auto 0;
+  }
+.bottom-contact-botan{
+    display: block;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item4{
+    border-bottom: 1px solid black;
+}
+.top-company-list{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.bottom-contact-ttl{
+    font-size: 30px;
+}
+
+.mv-main{
+    font-size: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  
+  
+    .header-nav {
+      display: none;
+    }
+  
+    .menu {
+      display: inline-block;
+      width: 36px;
+      height: 32px;
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
+    }
+  
+    .menu-line-top,
+    .menu-line-middle,
+    .menu-line-bottom {
+      display: inline-block;
+      width: 100%;
+      height: 4px;
+      background-color: #000;
+      position: absolute;
+      transition: 0.5s;
+    }
+  
+    .menu-line-top {
+      top: 0;
+    }
+  
+    .menu-line-middle {
+      top: 14px;
+    }
+  
+    .menu-line-bottom {
+      bottom: 0;
+    }
+  
+    .menu.open span:nth-of-type(1) {
+      top: 14px;
+      transform: rotate(45deg);
+    }
+  
+    .menu.open span:nth-of-type(2) {
+      opacity: 0;
+    }
+  
+    .menu.open span:nth-of-type(3) {
+      top: 14px;
+      transform: rotate(-45deg);
+    }
+  
+    .drawer-nav{
+      display: block;
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: -100%;
+      background: white;
+    }
+  
+    .drawer-nav-list {
+      padding-top: 80px;
+      text-align: center;
+    }
+  
+    .drawer-nav-item {
+      margin-top: 40px;
+      color: #0033cc;
+      font-size: 18px;
+    }
+  
+    .footer-nav-item {
+      text-align: center;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .footer-nav-item:after {
+      display: none;
+    }
+    .service-item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .service-item-ttl{
+        margin-top: 10px;
+    }
+  }
+  
+  .service-item{
+      display: flex;
+  }
+.service-item p{
+    margin-top: 20px;
+}
+
+
+
